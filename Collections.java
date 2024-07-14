@@ -1,12 +1,15 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.TreeSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.HashMap;
+// import java.util.ArrayList;
+// import java.util.Collection;
+// import java.util.List;
+// import java.util.Set;
+// import java.util.HashSet;
+// import java.util.TreeSet;
+// import java.util.Iterator;
+// import java.util.Map;
+// import java.util.HashMap;
+// import java.util.Arrays;
+import java.util.*; //replaces above
+// import java.util.stream.Stream; //replaces above
 
 public class Collections {
     public static void main(String[] args) {
@@ -78,5 +81,21 @@ public class Collections {
             System.out.println(key + " : " + favoritePeople.get(key));
         }
 
+        //Stream API (Map Filter Reduce)
+
+        List<Integer> nums5 = Arrays.asList(4, 5, 7, 3, 2 ,6);
+
+        // Stream<Integer> s1 = nums5.stream();
+        // Stream<Integer> s2 = s1.filter(n -> n % 2 == 0); //filter for even nums
+        // Stream<Integer> s3 = s2.map(n -> n * 2); //Mapping to double each nums
+        // int result = s3.reduce(0, (oof, doof) -> oof + doof);
+
+        int result = nums5.stream() // replaces all of avove
+            .filter(n -> n % 2 == 0)
+            .map(n -> n * 2)
+            .reduce(0, (glug, blug) -> glug + blug);
+
+        // s3.forEach(n -> System.out.println(n));
+        System.out.println(result);
     }
 }
