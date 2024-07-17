@@ -15,6 +15,7 @@ public class Sort {
         for(int num : arr) {
             System.out.print(num + " ");
         }
+        System.out.println(" ");
     }
 
     static void bubbleSort(int[] arr) {
