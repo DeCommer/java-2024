@@ -2,10 +2,9 @@ import java.util.Scanner;
 import java.sql.*;
 
 //Right click in this file and select Run Java
-
 public class Startjdbc {
     // Connect to your database.
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         String URL = "jdbc:mysql://10.0.1.14:3306/hot_sauces"; //database connection
         String USER;
@@ -20,6 +19,7 @@ public class Startjdbc {
         PASS = input.nextLine();
 
         try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection(URL, USER, PASS);
             System.out.println("Connected");
             //
