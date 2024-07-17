@@ -104,18 +104,15 @@ public class Sort {
 
         int n1 = mid - l + 1;
         int n2 = r - mid;
-
         int lArr[] = new int[n1];
         int rArr[] = new int[n2];
 
         for(int i = 0; i < n1; i++ ) {
             lArr[i] = arr[l+i];
         }
-
         for(int i = 0; i < n2; i++ ) {
             rArr[i] = arr[mid + 1 + i];
         }
-
         int i = 0;
         int j = 0;
         int k = l;
