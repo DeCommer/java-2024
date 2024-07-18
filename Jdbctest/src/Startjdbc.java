@@ -34,7 +34,7 @@ public class Startjdbc {
                 int id = rs.getInt("id");
                 String sauce_name = rs.getString("sauce_name");
                 String location = rs.getString("location");
-                String flavor_type = rs.getString("flavor_type");
+                String flavor_type = rs.getString("flavor_type"); //Column names
                 int heat_rating = rs.getInt("heat_rating");
                 int flavor_rating = rs.getInt("flavor_rating");
                 String comments = rs.getString("comments");
