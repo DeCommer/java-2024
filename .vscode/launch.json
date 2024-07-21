@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Math",
+            "request": "launch",
+            "mainClass": "Math"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-ExampleApplication<example>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
