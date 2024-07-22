@@ -11,7 +11,7 @@ public class Sorting {
             
             public int compare(Integer i, Integer j) {
 
-                if(i % 10 > j % 10) {
+                if(i > j) {
                     return 1;
                 }else {
                     return -1;
@@ -19,15 +19,15 @@ public class Sorting {
             }
         };
 
-
         List<Integer> nums = new ArrayList<>();
-        nums.add(45);
-        nums.add(64);
-        nums.add(28);
+
         nums.add(85);
         nums.add(31);
+        nums.add(64);
+        nums.add(45);
+        nums.add(28);
 
-        // System.out.println("Original: " + nums);
+        System.out.println("Original: " + nums);
 
         Collections.sort(nums, com);
         System.out.println("Sorted: " + nums);
