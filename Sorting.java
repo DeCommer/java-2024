@@ -24,6 +24,8 @@ public class Sorting {
         nums.add(85);
         nums.add(31);
         nums.add(64);
+        nums.add(1000);
+        nums.add(64);
         nums.add(45);
         nums.add(28);
 
