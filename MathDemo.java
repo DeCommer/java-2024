@@ -2,7 +2,7 @@ import java.util.List;
 
 import java.util.Random;
 
-public class Math
+public class MathDemo
     {
         public static void main(String[] args)
             {

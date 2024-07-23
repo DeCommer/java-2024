@@ -4,35 +4,34 @@ public class Bmi
     {
         public static void main(String[] args)
             {
-
                 Scanner input = new Scanner(System.in);
 
-                Person joseph = new Person();
+                Person person = new Person();
 
                 System.out.print("Enter Name: ");
                 String fNameIn = input.nextLine();
-                joseph.setfName(fNameIn);
-
+                person.setfName(fNameIn);
+                    
                 System.out.print("Age: ");
                 int ageIn = input.nextInt();
-                joseph.setAge(ageIn);
+                person.setAge(ageIn);
 
                 System.out.print("Enter Height in Feet.inches Eg. 5.9: ");
                 double heightIn = input.nextDouble();
-                joseph.setHeight(Math.floor((heightIn * 12) * 100) / 100);
+                person.setHeight(Math.floor((heightIn * 12) * 100) / 100);
 
                 System.out.print("Enter your weight in lbs: ");
                 int weightIn = input.nextInt();
-                joseph.setWeight(weightIn);
+                person.setWeight(weightIn);
         
-                double bmi = ((joseph.getWeight() / Math.pow(joseph.getHeight(), 2)) * 703);
+                double bmi = ((person.getWeight() / Math.pow(person.getHeight(), 2)) * 703);
 
                 System.out.println("");
 
-                System.out.println("Hello, " + joseph.getfName());
-                System.out.println("For an age of " + joseph.getAge() + " years old");
-                System.out.println("With your weight being " + joseph.getWeight() + "lbs");
-                System.out.println("And a height of " + joseph.getHeight() + "in");
+                System.out.println("Hello, " + person.getfName());
+                System.out.println("For an age of " + person.getAge() + " years old");
+                System.out.println("With your weight being " + person.getWeight() + "lbs");
+                System.out.println("And a height of " + person.getHeight() + "in");
                 System.out.println("");
                 System.out.println("Your  BMI is: " + Math.floor(bmi * 100) / 100);
 
