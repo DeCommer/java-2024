@@ -5,11 +5,11 @@ import java.util.Random;
 public class Math
     {
         public static void main(String[] args)
-        {
-            //Calculate an average from an array of numbers
-            int[] nums = {25, 50, 40, 70, 80, 30};
-            avg(nums);
-        }
+            {
+                //Calculate an average from an array of numbers
+                int[] nums = {25, 50, 40, 70, 80, 30};
+                avg(nums);
+            }
 
         public static int[] avg(int[] arr) 
             {
@@ -32,6 +32,5 @@ public class Math
                         System.out.println("Divide by zero error");
                     } 
                     return arr;
-                    
             }
     }
