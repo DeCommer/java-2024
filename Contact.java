@@ -5,7 +5,8 @@ public class Contact {
     private String birthDate;
     // private int age;
 
-    public Contact() {
+    public int toAge(int age) {
+        locaDate.parse(birthday);
 
     }
 
@@ -16,6 +17,11 @@ public class Contact {
         // this.age = age;
     }
 
+    public Contact(Contact source) {
+        this.name = source.name;
+        this.phoneNumber = source.phoneNumber;
+        this.birthDate = source.birthDate;
+    }
 
     public String getName() {
         return this.name;

@@ -1,14 +1,11 @@
+import java.time.LocalDate;
+import java.time.Period;
 
-public class Trial 
-    {
-        public static void main(String[] args) 
-            {
 
-                int a = 9;
-                var b = 8;
+public class Trial {
 
-                int res = a + b;
 
-                System.out.println(res);
-            }
+    public static void main(String[] args) {
+        toAge("1979-10-04");
     }
+}
