@@ -24,10 +24,9 @@ class FizzBuzz
 
     public class fizzyb
     {
-        public static void main(String blergs[])
-            {
-                FizzBuzz fb = new FizzBuzz();
-                fb.fizzyMethod(15);
-
-            }
+        public static void main(String[] args) {
+            Contact contact1 = new Contact("Joseph", "123-4567", "1979-04-10", 44);
+    
+            System.out.println(contact1);
+        }
     }
