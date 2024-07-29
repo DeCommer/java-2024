@@ -2,19 +2,9 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Math",
+            "name": "ContactUse",
             "request": "launch",
-            "mainClass": "Math"
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-ExampleApplication<example>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.joseph.example.ExampleApplication",
-            "projectName": "example",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "mainClass": "ContactUse"
         }
     ]
 }
