@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ContactMain",
+            "request": "launch",
+            "mainClass": "ContactMain"
+        },
+        {
+            "type": "java",
             "name": "ContactUse",
             "request": "launch",
             "mainClass": "ContactUse"
