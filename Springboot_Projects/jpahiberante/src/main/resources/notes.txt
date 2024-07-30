@@ -1,0 +1,7 @@
+
+
+
+--SQL--
+INSERT INTO item(id, name, description) VALUES(1, 'Joseph', 'A person');
+SELECT * FROM item;
+DELETE FROM item WHERE id=1;

@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JpahiberanteApplication",
+            "request": "launch",
+            "mainClass": "JpahiberanteApplication",
+            "projectName": "java-2024_27b9b27c"
+        },
+        {
+            "type": "java",
             "name": "ContactMain",
             "request": "launch",
             "mainClass": "ContactMain"
