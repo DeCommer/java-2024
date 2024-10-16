@@ -2,7 +2,6 @@
 // import java.util.List;
 
 public class inouts {
-    
     public static void main(String[] args) {
         int n = 11;
         System.out.println(isPrime(n));
@@ -17,4 +16,6 @@ public class inouts {
         }
         return true;
     }
+
+    
 }
