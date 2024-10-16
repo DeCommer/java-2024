@@ -1,93 +1,77 @@
 import java.util.Scanner;
 
-public class Sort
-    {
+public class Sort {
 
-        static void before(int[] arr) 
+    static void before(int[] arr) {
+        System.out.println("Before: ");
+        for(int num : arr)
             {
-                System.out.println("Before: ");
-                for(int num : arr)
-                    {
-                        System.out.print(num + " ");
-                    }
-            }
+                System.out.print(num + " ");
+        }
+    }
 
-        static void after(int[] arr)
+    static void after(int[] arr){
+        System.out.println("");
+        System.out.println("After: ");
+        for(int num : arr)
             {
-                System.out.println("");
-                System.out.println("After: ");
-                for(int num : arr)
-                    {
-                        System.out.print(num + " ");
-                    }
-                System.out.println(" ");
+                System.out.print(num + " ");
             }
+        System.out.println(" ");
+    }
 
-        static void bubbleSort(int[] arr)
-            {
-                int n = arr.length;
-                int temp = 0;
-                for(int i = 0; i < n; i++)
-                    {
-                        for(int j = 0; j < n - 1; j++) 
-                            {
-                                if(arr[j] > arr[j + 1])
-                                    {
-                                        temp = arr[j];
-                                        arr[j] = arr[j + 1];
-                                        arr[j + 1] = temp;
-                                    }
-                            }
-                    }
+    static void bubbleSort(int[] arr){
+        int n = arr.length;
+        int temp = 0;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n - 1; j++) {
+                if(arr[j] > arr[j + 1]){
+                        temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                }
             }
+        }
+    }
 
-        static void selectionSort(int[] arr)
-            {
-                int n = arr.length;
-                int temp = 0;
-                int minIdx = -1;
-                for(int i = 0; i < n - 1; i++)
-                    {
-                        minIdx = i;
-                        for(int j = i + 1; j < n; j++)
-                            {
-                                
-                                if(arr[minIdx] > arr[j])
-                                    {
-                                        minIdx = j;
-                                    }
-                            }
-                        temp = arr[minIdx];
-                        arr[minIdx] = arr[i];
-                        arr[i] = temp;
+    static void selectionSort(int[] arr){
+        int n = arr.length;
+        int temp = 0;
+        int minIdx = -1;
+        for(int i = 0; i < n - 1; i++){
+            minIdx = i;
+            for(int j = i + 1; j < n; j++){
+                    if(arr[minIdx] > arr[j]){
+                            minIdx = j;
+                        }
                     }
+                temp = arr[minIdx];
+                arr[minIdx] = arr[i];
+                arr[i] = temp;
             }
+        }
 
-        static void insertionSort(int[] arr) 
-            {
-                int n = arr.length;
-                for(int i = 1; i < n; i++)
-                    {
-                        int key = arr[i];
-                        int j = i - 1;
-                        while(j >= 0 && arr[j] > key)
-                            {
-                                arr[j + 1] = arr[j];
-                                j--;
-                            }
-                        arr[j + 1] = key;
-                    }
+    static void insertionSort(int[] arr) {
+        int n = arr.length;
+        for(int i = 1; i < n; i++){
+            int key = arr[i];
+            int j = i - 1;
+            while(j >= 0 && arr[j] > key){
+                arr[j + 1] = arr[j];
+                j--;
             }
+            arr[j + 1] = key;
+        }
+    }
 
-        static void quickSort(int[] arr, int low, int high)
-            {
-                if(low < high)
-                    {
-                        int part = partition(arr, low, high);
-                        quickSort(arr, low, part - 1);
-                        quickSort(arr, part + 1, high );
-                    }
-            }
+    static void quickSort(int[] arr, int low, int high){
+        if(low < high){
+                int part = partition(arr, low, high);
+                quickSort(arr, low, part - 1);
+                quickSort(arr, part + 1, high );
+        }
+    }
+
         private static int partition(int[] arr, int low, int high)
             {
                 int pivot = arr[high];
@@ -226,47 +210,46 @@ public class Sort
                 //         System.out.println("Enter a valid choice");
                 //     }
 
-                switch(selection)
-                    {
-                        case 1:
-                            System.out.println("Bubble Sort");
-                            before(arr);
-                            System.out.println("");
-                            bubbleSort(arr);
-                            after(arr);
-                            break;
-                        case 2:
-                            System.out.println("Selection Sort");
-                            before(arr);
-                            System.out.println("");
-                            selectionSort(arr);
-                            after(arr);
-                            break;
-                        case 3:
-                            System.out.println("Insertion Sort");
-                            before(arr);
-                            System.out.println("");
-                            insertionSort(arr);
-                            after(arr);
-                            break;
-                        case 4:
-                            System.out.println("Quick Sort");
-                            before(arr);
-                            System.out.println("");
-                            quickSort(arr, 0, arr.length -1);
-                            after(arr);
-                            break;
-                        case 5:
-                            System.out.println("Merge Sort");
-                            before(arr);
-                            System.out.println("");
-                            mergeSort(arr, 0, arr.length - 1);
-                            after(arr);
-                            break;
-                        default :
-                            System.out.println("Enter a valid choice");
-                    }
-
-                input.close();
+            switch(selection){
+                case 1:
+                    System.out.println("Bubble Sort");
+                    before(arr);
+                    System.out.println("");
+                    bubbleSort(arr);
+                    after(arr);
+                    break;
+                case 2:
+                    System.out.println("Selection Sort");
+                    before(arr);
+                    System.out.println("");
+                    selectionSort(arr);
+                    after(arr);
+                    break;
+                case 3:
+                    System.out.println("Insertion Sort");
+                    before(arr);
+                    System.out.println("");
+                    insertionSort(arr);
+                    after(arr);
+                    break;
+                case 4:
+                    System.out.println("Quick Sort");
+                    before(arr);
+                    System.out.println("");
+                    quickSort(arr, 0, arr.length -1);
+                    after(arr);
+                    break;
+                case 5:
+                    System.out.println("Merge Sort");
+                    before(arr);
+                    System.out.println("");
+                    mergeSort(arr, 0, arr.length - 1);
+                    after(arr);
+                    break;
+                default :
+                    System.out.println("Enter a valid choice");
             }
+
+        input.close();
+        }
     }
