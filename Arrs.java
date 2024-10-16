@@ -1,4 +1,4 @@
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.ArrayList;
 
 public class Arrs
@@ -54,7 +54,7 @@ public class Arrs
             });
             System.out.printf("After: " + list1.toString());
 
-            for(int n = 0; n <= list1.length; n++)
+            for(int n = 0; n <= list1.size(); n++)
                 {
                     n *= 2;
                     System.out.println("After: " + n);
