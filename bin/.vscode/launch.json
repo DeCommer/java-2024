@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Bmi",
+            "request": "launch",
+            "mainClass": "Bmi",
+            "projectName": "java-2024"
+        },
+        {
+            "type": "java",
+            "name": "Threads",
+            "request": "launch",
+            "mainClass": "Threads",
+            "projectName": "java-2024"
+        },
+        {
+            "type": "java",
+            "name": "MathDemo",
+            "request": "launch",
+            "mainClass": "MathDemo",
+            "projectName": "java-2024"
+        },
+        {
+            "type": "java",
+            "name": "Lambda",
+            "request": "launch",
+            "mainClass": "Lambda",
+            "projectName": "java-2024"
+        },
+        {
+            "type": "java",
             "name": "JpahiberanteApplication",
             "request": "launch",
             "mainClass": "JpahiberanteApplication",
