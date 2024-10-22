@@ -7,7 +7,6 @@ public class inouts {
     public static void main(String[] args) {
         int n = 20;
         // System.out.println(isPrime(n));
-
         stream().limit(n).forEachOrdered(System.out::println);
     }
     
@@ -31,5 +30,4 @@ public class inouts {
             return oldLast;
         });
     }
-
 }
