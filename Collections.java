@@ -15,7 +15,6 @@ public class Collections
     {
     public static void main(String[] args)
         {
-
             Collection<Integer> nums = new ArrayList<Integer>();
             nums.add(2);
             nums.add(5);
