@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Practice",
+            "request": "launch",
+            "mainClass": "Practice",
+            "projectName": "java-2024"
+        },
+        {
+            "type": "java",
             "name": "TipCalcPractice",
             "request": "launch",
             "mainClass": "TipCalcPractice",
