@@ -9,24 +9,28 @@ import java.util.Scanner;
 
 public class TipCalcPractice {
     public static void tipCalc() {
-        Scanner in = new Scanner(System.in);
-        System.out.print("What is the bill cost? ");
-        double billTotal = in.nextDouble();
-        System.out.print("How many people in the group? ");
-        int groupSize = in.nextInt();
-        System.out.print("What is you chosen tip percentage? ");
-        double tipPercent = in.nextDouble() / 100;
-        double tipAmount = (billTotal * tipPercent);
-        double total = billTotal + tipAmount;
-        double amountDuePerPerson = (billTotal / groupSize) + (tipAmount / groupSize);
-        in.close();
+        double billTotal;
+        double tipPercent;
+        double tipAmount;
+        double total;
+        double amountDuePerPerson;
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.print("What is the bill cost? ");
+            billTotal = in.nextDouble();
+            System.out.print("How many people in the group? ");
+            int groupSize = in.nextInt();
+            System.out.print("What is you chosen tip percentage? ");
+            tipPercent = in.nextDouble() / 100;
+            tipAmount = (billTotal * tipPercent);
+            total = billTotal + tipAmount;
+            amountDuePerPerson = (billTotal / groupSize) + (tipAmount / groupSize);
+        }
         System.out.println("++++++++++++++++++++++");
         System.out.printf("Bill: $%.2f \n", billTotal);
         System.out.printf("%.2f%% tip, $%.2f \n", tipPercent, tipAmount);
         System.out.printf("Total: $%.2f \n", total);
         System.out.printf("Tip per person $%.2f \n", amountDuePerPerson);
     }
-
     public static void main(String[] args) {
         tipCalc();
     }
