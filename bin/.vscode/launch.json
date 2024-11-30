@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Sort",
+            "request": "launch",
+            "mainClass": "Sort",
+            "projectName": "java-2024"
+        },
+        {
+            "type": "java",
             "name": "Countdown",
             "request": "launch",
             "mainClass": "Countdown",
