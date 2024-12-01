@@ -4,9 +4,7 @@
 /// you want to split the tip evenly amongst the group
 /// All you have is your laptop, java, and NO INTERNET!
 /// Whip up a quick java tip calculator to impress all your friends and save the day!
-
 import java.util.Scanner;
-
 public class TipCalcPractice {
     public static void tipCalc() {
         double billTotal;
