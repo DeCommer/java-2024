@@ -2,7 +2,7 @@
 // import java.util.List;
 
 import java.util.stream.IntStream;
-
+//fibbo
 public class inouts {
     public static void main(String[] args) {
         int n = 20;

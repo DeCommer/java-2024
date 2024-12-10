@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TreeMapExample",
+            "request": "launch",
+            "mainClass": "TreeMapExample",
+            "projectName": "java-2024"
+        },
+        {
+            "type": "java",
             "name": "FizzBuzz",
             "request": "launch",
             "mainClass": "FizzBuzz",
