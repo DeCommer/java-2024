@@ -8,7 +8,7 @@ public class MathDemo
         public static void main(String[] args)
             {
                 //Calculate an average from an array of numbers
-                int[] nums = {20, 50, 40, 70, 80, 60, 30};
+                int[] nums = {20, 50, 40, 70, 80, 60, 30, 90};
                 avg(nums);
             }
 
