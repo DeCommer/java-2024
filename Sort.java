@@ -156,100 +156,97 @@ public class Sort {
 
         public static void main(String[] args) 
             {
-                Scanner input = new Scanner(System.in);
-
-                System.out.println("1: Bubble, 2: Selection, 3: Insertion, 4: Quick, 5: Merge Sort");
-                System.out.print("Enter Sort Choice: ");
-                int selection = input.nextInt();
-                System.out.println(" ");
-
-                int arr[] = {3, 5, 1, 4, 6 ,2};
-
-                // if(selection == 1)
-                //     {
-                //         System.out.println("Bubble Sort");
-                //         before(arr);
-                //         System.out.println("");
-                //         bubbleSort(arr);
-                //         after(arr);
-                //     }
-                // else if(selection == 2)
-                //     {
-                //         System.out.println("Selection Sort");
-                //         before(arr);
-                //         System.out.println("");
-                //         selectionSort(arr);
-                //         after(arr);
-                //     }
-                // else if(selection == 3)
-                //     {
-                //         System.out.println("Insertion Sort");
-                //         before(arr);
-                //         System.out.println("");
-                //         insertionSort(arr);
-                //         after(arr);
-                //     }
-                // else if(selection == 4)
-                //     {
-                //         System.out.println("Quick Sort");
-                //         before(arr);
-                //         System.out.println("");
-                //         quickSort(arr, 0, arr.length -1);
-                //         after(arr);
-                //     }
-                // else if(selection == 5)
-                //     {
-                //         System.out.println("Insertion Sort");
-                //         before(arr);
-                //         System.out.println("");
-                //         mergeSort(arr);
-                //         after(arr);
-                //     }
-                // else
-                //     {
-                //         System.out.println("Enter a valid choice");
-                //     }
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("1: Bubble, 2: Selection, 3: Insertion, 4: Quick, 5: Merge Sort");
+            System.out.print("Enter Sort Choice: ");
+            int selection = input.nextInt();
+            System.out.println(" ");
+            
+            int arr[] = {3, 5, 1, 4, 6 ,2};
+            
+            // if(selection == 1)
+            //     {
+            //         System.out.println("Bubble Sort");
+            //         before(arr);
+            //         System.out.println("");
+            //         bubbleSort(arr);
+            //         after(arr);
+            //     }
+            // else if(selection == 2)
+            //     {
+            //         System.out.println("Selection Sort");
+            //         before(arr);
+            //         System.out.println("");
+            //         selectionSort(arr);
+            //         after(arr);
+            //     }
+            // else if(selection == 3)
+            //     {
+            //         System.out.println("Insertion Sort");
+            //         before(arr);
+            //         System.out.println("");
+            //         insertionSort(arr);
+            //         after(arr);
+            //     }
+            // else if(selection == 4)
+            //     {
+            //         System.out.println("Quick Sort");
+            //         before(arr);
+            //         System.out.println("");
+            //         quickSort(arr, 0, arr.length -1);
+            //         after(arr);
+            //     }
+            // else if(selection == 5)
+            //     {
+            //         System.out.println("Insertion Sort");
+            //         before(arr);
+            //         System.out.println("");
+            //         mergeSort(arr);
+            //         after(arr);
+            //     }
+            // else
+            //     {
+            //         System.out.println("Enter a valid choice");
+            //     }
 
             switch(selection){
-                case 1:
+                case 1 -> {
                     System.out.println("Bubble Sort");
                     before(arr);
                     System.out.println("");
                     bubbleSort(arr);
                     after(arr);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("Selection Sort");
                     before(arr);
                     System.out.println("");
                     selectionSort(arr);
                     after(arr);
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("Insertion Sort");
                     before(arr);
                     System.out.println("");
                     insertionSort(arr);
                     after(arr);
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("Quick Sort");
                     before(arr);
                     System.out.println("");
                     quickSort(arr, 0, arr.length -1);
                     after(arr);
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.println("Merge Sort");
                     before(arr);
                     System.out.println("");
                     mergeSort(arr, 0, arr.length - 1);
                     after(arr);
-                    break;
-                default :
-                    System.out.println("Enter a valid choice");
+                }
+                default -> System.out.println("Enter a valid choice");
             }
-
-        input.close();
+        }
         }
     }
