@@ -22,7 +22,7 @@ public class Sort {
 
     static void bubbleSort(int[] arr){
         int n = arr.length;
-        int temp = 0;
+        int temp;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n - 1; j++) {
                 if(arr[j] > arr[j + 1]){
@@ -36,10 +36,10 @@ public class Sort {
 
     static void selectionSort(int[] arr){
         int n = arr.length;
-        int temp = 0;
-        int minIdx = -1;
+        // int minIdx = -1;
+        int temp;
         for(int i = 0; i < n - 1; i++){
-            minIdx = i;
+            int minIdx = i;
             for(int j = i + 1; j < n; j++){
                     if(arr[minIdx] > arr[j]){
                             minIdx = j;
